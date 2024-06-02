@@ -172,6 +172,12 @@ p {
         row-gap: 30px;
         flex-direction: column;
     }
+    .Sub-box{
+        width: 95%;
+    }
+    #comment{
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 767px) {
    .box {
@@ -198,5 +204,11 @@ p {
         width: 100%;
         row-gap: 30px;
         flex-direction: column;
+    }
+    .Sub-box{
+        width: 95%;
+    }
+    #comment{
+        width: 90%;
     }
 }
