@@ -1,0 +1,190 @@
+body {
+    width: 100dvw;
+    height: 130dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(224, 241, 231, 255);
+    font-family: "Karla";
+}
+
+.success{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transform: scale(0.1);
+    visibility: hidden;
+}
+.sent{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.submit-success{
+    visibility: visible;
+    transform: scale(1);
+}
+.box {
+    background-color: white;    
+    padding: 20px;
+    border-radius: 1.2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.Mbox {
+    width: 100%;
+    min-height: 6.5rem;
+}
+.Mbox:hover {
+    cursor: pointer;
+}
+#UserName {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.lName,
+.fName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Fname,
+#Lname {
+    height: 2.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#Email {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#mail {
+    height: 2.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+}
+#Fname:hover,
+#Lname:hover,
+#mail:hover,
+#comment:hover {
+    border-color: #0a5d55;
+}
+.Sub-box {
+    width: 45%;
+    height: 2.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.query-options {
+    display: flex;
+    justify-content: space-between;
+}
+#comment {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-overflow: scroll;
+    width: 95.5%;
+    height: 4.5rem;
+    padding: 15px;
+    resize: none;
+}
+.btn-active {
+    accent-color: #0a5d55;
+}
+.Sub-box:active {
+    border-color: #0a5d55;
+    background-color: #e0f1e7;
+}
+#Checkbox {
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 5px;
+}
+#Submit-form {
+    width: 100%;
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #0c7d69;
+    color: white;
+    font-weight: bolder;
+}
+#Submit-form:hover {
+    background-color: #0a5d55;
+    cursor: pointer;
+}
+.star {
+    color: #0a5d55;
+}
+.Error-border {
+    border-color: red;
+}
+.Error{
+    color: red;
+    margin-bottom: 0;
+    margin-top: 10px;
+    height: 19px;
+}
+.visible{
+    visibility: visible;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .box {
+        width: 60%;
+    }
+    #Fname,
+    #Lname {
+        width: 80%;
+    }
+    #mail {
+        min-width: 100%;
+    }
+   .Sub-box {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 767px) {
+   .box {
+        width: 70%;
+    }
+    #UserName {
+        flex-direction: column;
+    }
+   .fName,
+   .lName {
+        width: 100%;
+    }
+    #Fname,
+    #Lname {
+        min-height: 2.5rem;
+    }
+    #Lname {
+        align-self: normal;
+    }
+    #mail {
+        min-width: 90%;
+    }
+   .query-options {
+        width: 100%;
+        row-gap: 30px;
+        flex-direction: column;
+    }
+}

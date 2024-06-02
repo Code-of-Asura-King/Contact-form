@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+</head>
+
+<body>
+    <div class="success">
+        <div class="sent">
+            <img src="icon-success-check.svg" alt="check">
+            <p><b>Message Sent</b></p>
+        </div>
+        <p>Thanks for completing the form. We will be in touch soon</p>
+    </div>
+
+    <div class="box">
+        <h1>Contact Us</h1>
+        <form action="/submit-form" method="post" name="form1">
+            <div class="Mbox" id="UserName">
+                <div class="fName">
+                    <p>First Name <span class="star">*</span></p>
+                    <input type="text" name="Fname" id="Fname" required>
+                    <p class="Error"></p>
+                </div>
+                <div class="lName">
+                    <p class="left">Last Name <span class="star">*</span></p>
+                    <input type=" text" name="Lname" id="Lname" required>
+                    <p class="Error"></p>
+                </div>
+            </div>
+            <div class="Mbox" id="Email">
+                <p>Email <span class="star">*</span></p>
+                <input type="email" name="Email" id="mail" required>
+                <p class="Error"></p>
+            </div>
+            <div class="Mbox" id="Query">
+                <p>Query Type <span class="star">*</span></p>
+                <div class="query-options">
+                    <div id="general" class="Sub-box">
+                        <input type="radio" name="query" class="btn-active" value="general"><label for="general">&nbsp;
+                            General
+                            Enquiry</label>
+                    </div>
+                    <div id="support" class="Sub-box">
+                        <input type="radio" name="query" class="btn-active" value="support"><label for="support">&nbsp;
+                            Support
+                            Request</label>
+                    </div>
+
+                </div>
+                <p class="Error"></p>
+            </div>
+            <div class="Mbox" id="Message">
+                <p>Message <span class="star">*</span></p>
+                <!-- <input type="text" name="message" id="comment" required> -->
+                <textarea id="comment" rows="4" name="comment" required> </textarea>
+                <p class="Error"></p>
+            </div>
+
+            <div class="Mbox">
+                <div id="Checkbox">
+                    <input type="checkbox" class="btn-active" name="checkbox" required>
+                    <span>I consent to being contacted by the team <span class="star">*</span></span>
+                </div>
+                <p class="Error"></p>
+
+            </div>
+            <input type="submit" value="Submit" id="Submit-form" name="submit">
+
+        </form>
+
+        
+    </div>
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/Code-of-Asura-King">Asura King</a>.
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
