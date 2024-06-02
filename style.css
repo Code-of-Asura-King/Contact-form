@@ -147,18 +147,30 @@ p {
     visibility: visible;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-   .box {
-        width: 60%;
+  .box {
+        width: 70%;
+    }
+    #UserName {
+        flex-direction: column;
+    }
+   .fName,
+   .lName {
+        width: 100%;
     }
     #Fname,
     #Lname {
-        width: 80%;
+        min-height: 2.5rem;
+    }
+    #Lname {
+        align-self: normal;
     }
     #mail {
-        min-width: 100%;
+        min-width: 90%;
     }
-   .Sub-box {
-        width: 60%;
+   .query-options {
+        width: 100%;
+        row-gap: 30px;
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 767px) {
