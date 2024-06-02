@@ -173,10 +173,10 @@ p {
         flex-direction: column;
     }
     .Sub-box{
-        width: 95%;
+        width: 97%;
     }
     #comment{
-        width: 90%;
+        width: 94%;
     }
 }
 @media only screen and (max-width: 767px) {
